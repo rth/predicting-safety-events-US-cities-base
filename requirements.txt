@@ -5,4 +5,5 @@ scikit-learn==0.23.*
 notebook
 ipywidgets
 pandas-profiling==1.4.*
+ipyleaflet==0.13.*
 pyarrow
