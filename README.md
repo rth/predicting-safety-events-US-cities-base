@@ -14,7 +14,7 @@ project,
     ```
     conda create -n predicting-safety-events python=3.7
     conda activate predicting-safety-events
-    conda install --file requirements.txt
+    conda install -c conda-forge --file requirements.txt
     ```
     from the root of the repository.
  3. Additional packages can be installed with `conda install` or `pip install`
