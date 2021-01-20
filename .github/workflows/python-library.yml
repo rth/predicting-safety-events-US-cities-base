@@ -14,18 +14,18 @@ jobs:
 
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
-
 
     steps:
     - uses: actions/checkout@v2
     - uses: conda-incubator/setup-miniconda@v2
       with:
-        activate-environment: whatever
+        auto-update-conda: true
+        activate-environment: predicting-safety-events
+        python-version: 3.7
     - name: Install dependencies
       run: |
-          conda create -n predicting-safety-events python=3.7
-          source activate predicting-safety-events
           conda install --file requirements.txt
 
