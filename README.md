@@ -12,7 +12,7 @@ project,
  1. Clone this repository.
  2. To create a virtual environment and install requirements, run
     ```
-    conda create -n predicting-safety-events python=3.7
+    conda create -n predicting-safety-events python=3.8
     conda activate predicting-safety-events
     conda install -c conda-forge --file requirements.txt
     ```
